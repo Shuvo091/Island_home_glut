@@ -12,19 +12,18 @@
 
 
 double Txval=0,Tyval=0,Tzval=0;
-double windowHeight=700, windowWidth=700;
+double windowHeight=1500, windowWidth=750;
 GLfloat alpha = 0.0, theta = 0.0, axis_x=0.0, axis_y=0.0;
 GLboolean bRotate = 1, uRotate = false;
-bool light1= true, light2 = true, light3 =true;
+bool light1= false, light2 = true, light3 =false;
 bool amb =true, dif = true, spec = true;
 bool l_amb=true,l_dif=true, l_spec = true;
-float eyeX =6,eyeY=5,eyeZ=7, lookX=2,lookY=4,lookZ=1;
+float eyeX =70,eyeY=20,eyeZ=50, lookX=0,lookY=0,lookZ=0;
 
 
+///float eyeX =6,eyeY=5,eyeZ=7, lookX=2,lookY=4,lookZ=1;
 
 
-
-///float eyeX =7,eyeY=-30,eyeZ=7, lookX=2,lookY=2.5,lookZ=1;
 
 
 
@@ -43,6 +42,9 @@ void display(void)
     glViewport(0, 0, windowHeight, windowWidth);
 
 
+
+    ///Living room objects  here
+    /**
     drawFloor();
     ceilingNwall();
     drawBox1();
@@ -60,13 +62,12 @@ void display(void)
     glTranslatef(-2, 4,-3);
     drawSphere(1,1,0);
     glPopMatrix();
-
-
-
-
     fan();
     glPopMatrix();
+    **/
 
+    sea();
+    sky();
 
     glFlush();
     glutSwapBuffers();
@@ -91,9 +92,9 @@ int main (int argc, char **argv)
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 
-    glutInitWindowPosition(100,100);
+    glutInitWindowPosition(0,0);
     glutInitWindowSize(windowHeight, windowWidth);
-    glutCreateWindow("Living Room");
+    glutCreateWindow("Island Home");
 
     glShadeModel( GL_SMOOTH );
     glEnable( GL_DEPTH_TEST );

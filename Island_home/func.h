@@ -74,5 +74,9 @@ void drawAC();
 void drawSphere(float col_a,float col_b,float col_c);
 
 
+void sea();
+void sky();
+
+
 
 #endif // FUNC_H_INCLUDED

@@ -11,6 +11,11 @@ extern bool light1, light2, light3;
 extern bool amb, dif, spec;
 extern bool l_amb,l_dif, l_spec;
 extern float eyeX,eyeY,eyeZ, lookX,lookY,lookZ;
+extern unsigned int ID, ID1, ID2;
+
+
+
+
 
 static GLfloat v_cube[8][3] =
 {
@@ -56,6 +61,7 @@ void light();
 void myKeyboardFunc( unsigned char key, int x, int y );
 void animate();
 ///void display(void);
+void LoadTexture(const char*filename, unsigned int ID_);
 
 
 void ceilingNwall();
@@ -76,6 +82,7 @@ void drawSphere(float col_a,float col_b,float col_c);
 
 void sea();
 void sky();
+void island_shape();
 
 
 

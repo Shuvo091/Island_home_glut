@@ -6,6 +6,7 @@
 #include <windows.h>
 #include<math.h>
 #include "func.h"
+#include "BmpLoader.h"
 
 
 #define PI 3.1415927
@@ -19,6 +20,8 @@ bool light1= false, light2 = true, light3 =false;
 bool amb =true, dif = true, spec = true;
 bool l_amb=true,l_dif=true, l_spec = true;
 float eyeX =70,eyeY=20,eyeZ=50, lookX=0,lookY=0,lookZ=0;
+unsigned int ID1;
+unsigned int ID2,ID;
 
 
 ///float eyeX =6,eyeY=5,eyeZ=7, lookX=2,lookY=4,lookZ=1;
@@ -68,6 +71,8 @@ void display(void)
 
     sea();
     sky();
+    ///island_shape();
+    ///drawCube(1,1,1);
 
     glFlush();
     glutSwapBuffers();
@@ -96,17 +101,21 @@ int main (int argc, char **argv)
     glutInitWindowSize(windowHeight, windowWidth);
     glutCreateWindow("Island Home");
 
-    glShadeModel( GL_SMOOTH );
-    glEnable( GL_DEPTH_TEST );
-    glEnable(GL_NORMALIZE);
 
-
-    glEnable(GL_LIGHTING);
-    light();
 
     glutKeyboardFunc(myKeyboardFunc);
     glutDisplayFunc(display);
     glutIdleFunc(animate);
+    glutInitDisplayMode(GLUT_DOUBLE);
+
+    glClearColor(0,0,0,1);
+
+    glShadeModel( GL_SMOOTH );
+    glEnable( GL_DEPTH_TEST );
+    glEnable(GL_NORMALIZE);
+    glEnable(GL_LIGHTING);
+
+    light();
     glutMainLoop();
 
     return 0;

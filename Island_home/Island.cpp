@@ -32,10 +32,10 @@ void sky()
 {
     glPushMatrix();
     LoadTexture("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\sky.bmp", ID2);
-     glEnable(GL_TEXTURE_2D);
+    glEnable(GL_TEXTURE_2D);
     glPushMatrix();
     glTranslatef(0,0,0);
-    glScalef(1,100,50);
+    glScalef(1,80,40);
     glClearColor(0,0,0,1);
     drawCube(1,1,1);
     glPopMatrix();
@@ -44,15 +44,15 @@ void sky()
 
     glPushMatrix();
     LoadTexture("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\sky.bmp", ID2);
-     glEnable(GL_TEXTURE_2D);
+    glEnable(GL_TEXTURE_2D);
     glPushMatrix();
     glTranslatef(0,0,0);
-    glScalef(50,100,1);
+    glScalef(40,80,1);
     glClearColor(0,0,0,1);
     drawCube(1,1,1);
     glPopMatrix();
     glDisable(GL_TEXTURE_2D);
-     glPopMatrix();
+    glPopMatrix();
 
 
 
@@ -61,12 +61,19 @@ void sky()
 void island_shape()
 {
 
+
+
+    glPushMatrix();
+    LoadTexture_surface("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\grass.bmp", ID);
+
+
     GLfloat no_mat[] = { 0.0, 0.0, 0.0, 1.0 };
-    GLfloat mat_ambient[] = { 0, 1, 0, 1.0 };
-    GLfloat mat_diffuse[] = { 0, 1, 0, 1.0 };
-    GLfloat mat_specular[] = {1,1,1, 1.0 };
+    GLfloat mat_ambient[] = { 1, 1, 1, 1.0 };
+    GLfloat mat_diffuse[] = { 1, 1, 1, 1.0 };
+    GLfloat mat_specular[] = {1,0,1, 1.0 };
     GLfloat mat_shininess[] = {60};
-     if(amb)
+
+    if(amb)
     {
     glMaterialfv( GL_FRONT, GL_AMBIENT, mat_ambient);
 
@@ -99,82 +106,146 @@ void island_shape()
 
     glMaterialfv( GL_FRONT, GL_SHININESS, mat_shininess);
 
+    glEnable(GL_TEXTURE_2D);
 
     glPushMatrix();
-    glRotatef(10,0,1,0);
+    glTranslatef(20,0,5);
 
-    glBegin(GL_TRIANGLES);
-        glVertex3f(20,0,20);
-        glVertex3f(20,0,30);
-        glVertex3f(30,0,30);
-    glEnd();
 
-    glBegin(GL_TRIANGLES);
-        glVertex3f(20,5,20);
-        glVertex3f(20,5,30);
-        glVertex3f(30,5,30);
-    glEnd();
+    //glRotatef(90,0,0,1);
+    glBegin(GL_POLYGON);
+    glVertex3f(30,5,30);
+    glTexCoord2f(1,1);
 
-    glBegin(GL_QUADS);
-        glVertex3f(20,0,20);
-        glVertex3f(20,0,30);
-         glVertex3f(20,5,30);
-        glVertex3f(20,5,20);
-    glEnd();
+    glVertex3f(20,5,35);
+    glTexCoord2f(1,0);
 
-    glBegin(GL_QUADS);
-        glVertex3f(20,0,20);
-        glVertex3f(30,0,30);
-         glVertex3f(30,5,30);
-        glVertex3f(20,5,20);
-    glEnd();
+    glVertex3f(0,5,40);
+    glTexCoord2f(0,0);
 
-    glBegin(GL_QUADS);
-        glVertex3f(20,0,30);
-        glVertex3f(30,0,30);
-         glVertex3f(30,5,30);
-        glVertex3f(20,5,30);
+    glVertex3f(10,5,25);
+    glTexCoord2f(0,1);
+
+    glVertex3f(15,5,20);
+    glTexCoord2f(1,1);
+
+    glVertex3f(5,5,10);
+    glTexCoord2f(1,0);
+
+   // glVertex3f(10,5,10);
+    //glTexCoord2f(0.75,0);
+
+
+    glVertex3f(10,5,5);
+    glTexCoord2f(0,0);
+
+    glVertex3f(4,5,0);
+    glTexCoord2f(0,1);
+
+    glVertex3f(10,5,0);
+    glTexCoord2f(1,1);
+
+    glVertex3f(20,5,7);
+    glTexCoord2f(0.25,0);
+
+    glVertex3f(30,5,9);
+    glTexCoord2f(0.5,0);
+
+
+
     glEnd();
+    glPopMatrix();
+
+    glDisable(GL_TEXTURE_2D);
+    glPopMatrix();
+
+
+
 
     glPushMatrix();
-    ///glTranslatef(15,0,8);
-    ///glScalef(0.5,1,0.5);
-    ///glRotatef(20,0,1,0);
-    glBegin(GL_TRIANGLES);
-        glVertex3f(24,0,30);
-        glVertex3f(24,0,37);
-        glVertex3f(30,0,37);
+    LoadTexture_surface("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\stone3.bmp", ID);
+    glEnable(GL_TEXTURE_2D);
+
+    glPushMatrix();
+    glTranslatef(20,0,5);
+
+    glBegin(GL_QUADS);
+
+    glVertex3f(30,0,30);
+    glTexCoord2f(1,1);
+    glVertex3f(30,0,9);
+    glTexCoord2f(1,0);
+    glVertex3f(30,5,9);
+    glTexCoord2f(0,0);
+    glVertex3f(30,5,30);
+    glTexCoord2f(0,1);
+
     glEnd();
 
-    glBegin(GL_TRIANGLES);
-        glVertex3f(24,5,30);
-        glVertex3f(24,5,37);
-        glVertex3f(30,5,37);
+
+
+
+    glBegin(GL_QUADS);
+
+    glVertex3f(30,0,30);
+    glTexCoord2f(1,1);
+    glVertex3f(20,0,35);
+    glTexCoord2f(1,0);
+    glVertex3f(20,5,35);
+    glTexCoord2f(0,0);
+    glVertex3f(30,5,30);
+    glTexCoord2f(0,1);
+
     glEnd();
 
     glBegin(GL_QUADS);
-        glVertex3f(20,0,20);
-        glVertex3f(20,0,30);
-         glVertex3f(20,5,30);
-        glVertex3f(20,5,20);
+
+    glVertex3f(0,0,40);
+    glTexCoord2f(1,1);
+    glVertex3f(20,0,35);
+    glTexCoord2f(1,0);
+    glVertex3f(20,5,35);
+    glTexCoord2f(0,0);
+    glVertex3f(0,5,40);
+    glTexCoord2f(0,1);
+
     glEnd();
 
     glBegin(GL_QUADS);
-        glVertex3f(20,0,20);
-        glVertex3f(30,0,30);
-         glVertex3f(30,5,30);
-        glVertex3f(20,5,20);
+
+    glVertex3f(15,0,20);
+    glTexCoord2f(1,1);
+    glVertex3f(5,0,10);
+    glTexCoord2f(1,0);
+    glVertex3f(5,5,10);
+    glTexCoord2f(0,0);
+    glVertex3f(15,5,20);
+    glTexCoord2f(0,1);
+
     glEnd();
 
     glBegin(GL_QUADS);
-        glVertex3f(20,0,30);
-        glVertex3f(30,0,30);
-         glVertex3f(30,5,30);
-        glVertex3f(20,5,30);
+
+    glVertex3f(10,0,5);
+    glTexCoord2f(1,1);
+    glVertex3f(4,0,0);
+    glTexCoord2f(1,0);
+    glVertex3f(4,5,0);
+    glTexCoord2f(0,0);
+    glVertex3f(10,5,5);
+    glTexCoord2f(0,1);
+
     glEnd();
+
+
 
     glPopMatrix();
+
+    glDisable(GL_TEXTURE_2D);
     glPopMatrix();
+
+
+
 
 
 }

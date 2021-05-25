@@ -11,7 +11,7 @@ extern bool light1, light2, light3;
 extern bool amb, dif, spec;
 extern bool l_amb,l_dif, l_spec;
 extern float eyeX,eyeY,eyeZ, lookX,lookY,lookZ;
-extern unsigned int ID, ID1, ID2;
+extern unsigned int ID, ID1, ID2, ID3;
 
 
 
@@ -62,6 +62,7 @@ void myKeyboardFunc( unsigned char key, int x, int y );
 void animate();
 ///void display(void);
 void LoadTexture(const char*filename, unsigned int ID_);
+void LoadTexture_surface(const char*filename, unsigned int ID_);
 
 
 void ceilingNwall();

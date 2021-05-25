@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1621713703 source:c:\users\hp\desktop\glut_project\island_home\main.cpp
+1621958776 source:c:\users\hp\desktop\glut_project\island_home\main.cpp
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>
@@ -238,11 +238,11 @@
 1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
 
-1621713703 c:\users\hp\desktop\glut_project\island_home\func.h
+1621958776 c:\users\hp\desktop\glut_project\island_home\func.h
 
 1621330999 source:c:\users\hp\desktop\glut_project\island_home\func.c
 
-1621713703 source:c:\users\hp\desktop\glut_project\island_home\all_func.cpp
+1621958776 source:c:\users\hp\desktop\glut_project\island_home\all_func.cpp
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>
@@ -263,7 +263,7 @@
 	<math.h>
 	"func.h"
 
-1621713573 source:c:\users\hp\desktop\glut_project\island_home\island.cpp
+1621964126 source:c:\users\hp\desktop\glut_project\island_home\island.cpp
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>

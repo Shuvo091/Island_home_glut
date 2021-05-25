@@ -2,34 +2,34 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2843" topLine="88" />
-		</Cursor>
-	</File>
-	<File name="func.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="388" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="BmpLoader.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="366" topLine="0" />
-		</Cursor>
-	</File>
 	<File name="all_func.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1270" topLine="45" />
+			<Cursor1 position="750" topLine="17" />
 		</Cursor>
 	</File>
-	<File name="Island.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="func.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="212" topLine="21" />
+			<Cursor1 position="1476" topLine="64" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="543" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="living_room_labwork_objects.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="971" topLine="39" />
+		</Cursor>
+	</File>
+	<File name="Island.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1576" topLine="65" />
+		</Cursor>
+	</File>
+	<File name="BmpLoader.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="910" topLine="6" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

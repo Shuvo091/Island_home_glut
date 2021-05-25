@@ -26,6 +26,20 @@ void LoadTexture(const char*filename, unsigned int ID_)
     gluBuild2DMipmaps(GL_TEXTURE_2D, GL_RGB, bl.iWidth, bl.iHeight, GL_RGB, GL_UNSIGNED_BYTE, bl.textureData );
 }
 
+void LoadTexture_surface(const char*filename, unsigned int ID_)
+{
+    ID = ID_;
+    glGenTextures(1, &ID);
+    ///glBindTexture(GL_TEXTURE_2D, ID);
+    glPixelStorei(GL_UNPACK_ALIGNMENT, ID);
+    ///glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    ///glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    ///glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    ///glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    BmpLoader bl(filename);
+    gluBuild2DMipmaps(GL_TEXTURE_2D, GL_RGB, bl.iWidth, bl.iHeight, GL_RGB, GL_UNSIGNED_BYTE, bl.textureData );
+}
+
 
 
 static void getNormal3p(GLfloat x1, GLfloat y1,GLfloat z1, GLfloat x2, GLfloat y2,GLfloat z2, GLfloat x3, GLfloat y3,GLfloat z3)
@@ -95,9 +109,11 @@ void drawCube(float col_a,float col_b,float col_c, float shininess)
     for (GLint i = 0; i <6; i++)
     {
         ///glColor3f(col_a - i*0.03, col_b - i*0.03, col_c - i*0.03);
+
         getNormal3p(v_cube[quadIndices[i][0]][0], v_cube[quadIndices[i][0]][1], v_cube[quadIndices[i][0]][2],
                     v_cube[quadIndices[i][1]][0], v_cube[quadIndices[i][1]][1], v_cube[quadIndices[i][1]][2],
                     v_cube[quadIndices[i][2]][0], v_cube[quadIndices[i][2]][1], v_cube[quadIndices[i][2]][2]);
+
 
         glVertex3fv(&v_cube[quadIndices[i][0]][0]);
         glTexCoord2f(1,1);
@@ -202,8 +218,8 @@ void light()
     GLfloat light_position[] = { 0, 70.0, 0, 1.0 };
 
     GLfloat light_ambient2[]  = {1, 1, 1, 1.0};
-    GLfloat light_diffuse2[]  = { 1.0-0.3, 1.0-0.3, 0, 1.0 };
-    GLfloat light_specular2[] = { 1.0, 1.0, 0, 1.0 };
+    GLfloat light_diffuse2[]  = { 1.0, 1.0, 1, 1.0 };
+    GLfloat light_specular2[] = { 1.0, 1.0, 1, 1.0 };
     GLfloat light_position2[] = { 7, 50.0, 7, 1.0 };
 
     GLfloat light_ambient3[]  = {0.3, 0.3, 0.3, 1.0};

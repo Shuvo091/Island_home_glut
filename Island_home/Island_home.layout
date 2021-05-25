@@ -7,6 +7,7 @@
 			<Cursor1 position="971" topLine="39" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 	<File name="BmpLoader.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="910" topLine="6" />
@@ -15,21 +16,44 @@
 	<File name="Island.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1577" topLine="101" />
+=======
+	<File name="Island.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3252" topLine="155" />
 		</Cursor>
 	</File>
-	<File name="all_func.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
+			<Cursor1 position="543" topLine="0" />
+>>>>>>> fe69479a7301194f8228734a1f53b3c253d77856
+		</Cursor>
+	</File>
+	<File name="BmpLoader.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+<<<<<<< HEAD
 			<Cursor1 position="750" topLine="0" />
+=======
+			<Cursor1 position="910" topLine="6" />
+>>>>>>> fe69479a7301194f8228734a1f53b3c253d77856
 		</Cursor>
 	</File>
 	<File name="func.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
+<<<<<<< HEAD
 			<Cursor1 position="1476" topLine="44" />
 		</Cursor>
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="543" topLine="0" />
+=======
+			<Cursor1 position="1476" topLine="64" />
+		</Cursor>
+	</File>
+	<File name="all_func.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3278" topLine="112" />
+>>>>>>> fe69479a7301194f8228734a1f53b3c253d77856
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

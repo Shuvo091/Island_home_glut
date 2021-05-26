@@ -19,12 +19,12 @@ GLboolean bRotate = 1, uRotate = false;
 bool light1= false, light2 = true, light3 =false;
 bool amb =true, dif = true, spec = true;
 bool l_amb=true,l_dif=true, l_spec = true;
-float eyeX =60,eyeY=20,eyeZ=50, lookX=15,lookY=5,lookZ=15;
 unsigned int ID1;
 unsigned int ID2,ID, ID3;
 
+float eyeX =60,eyeY=70,eyeZ=50, lookX=15,lookY=5,lookZ=15;
 
-
+///float eyeX =60,eyeY=20,eyeZ=50, lookX=15,lookY=5,lookZ=15;
 ///float eyeX =70,eyeY=20,eyeZ=50, lookX=0,lookY=0,lookZ=0;
 
 
@@ -72,6 +72,7 @@ void display(void)
     sea();
     sky();
     island_shape();
+    road_network();
     ///drawCube(1,1,1);
 
     glFlush();

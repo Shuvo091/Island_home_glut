@@ -13,6 +13,7 @@
 
 void sea()
 {
+    light_enable();
     glPushMatrix();
     LoadTexture("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\sea.bmp", ID1);
     glEnable(GL_TEXTURE_2D);
@@ -30,6 +31,7 @@ void sea()
 
 void sky()
 {
+    light_enable();
     glPushMatrix();
     LoadTexture("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\sky.bmp", ID2);
     glEnable(GL_TEXTURE_2D);
@@ -62,58 +64,17 @@ void island_shape()
 {
 
 
+    light_enable();
 
     glPushMatrix();
     LoadTexture_surface("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\grass.bmp", ID);
-
-
-    GLfloat no_mat[] = { 0.0, 0.0, 0.0, 1.0 };
-    GLfloat mat_ambient[] = { 1, 1, 1, 1.0 };
-    GLfloat mat_diffuse[] = { 1, 1, 1, 1.0 };
-    GLfloat mat_specular[] = {1,0,1, 1.0 };
-    GLfloat mat_shininess[] = {60};
-
-    if(amb)
-    {
-    glMaterialfv( GL_FRONT, GL_AMBIENT, mat_ambient);
-
-    }
-    else
-    {
-        glMaterialfv( GL_FRONT, GL_AMBIENT, no_mat);
-    }
-
-    if(dif)
-    {
-    glMaterialfv( GL_FRONT, GL_DIFFUSE, mat_diffuse);
-
-    }
-    else
-    {
-        glMaterialfv( GL_FRONT, GL_DIFFUSE, no_mat);
-    }
-
-    if(spec)
-    {
-        glMaterialfv( GL_FRONT, GL_SPECULAR, mat_specular);
-    }
-    else
-    {
-        glMaterialfv( GL_FRONT, GL_SPECULAR, no_mat);
-    }
-
-
-
-    glMaterialfv( GL_FRONT, GL_SHININESS, mat_shininess);
-
     glEnable(GL_TEXTURE_2D);
 
     glPushMatrix();
     glTranslatef(20,0,5);
 
-
-    //glRotatef(90,0,0,1);
-    glBegin(GL_POLYGON);
+///-----------------------------------------------------
+    glBegin(GL_QUADS);
     glVertex3f(30,5,30);
     glTexCoord2f(1,1);
 
@@ -126,31 +87,66 @@ void island_shape()
     glVertex3f(10,5,25);
     glTexCoord2f(0,1);
 
+
+
+    glEnd();
+
+///------------------------------------------
+    glBegin(GL_QUADS);
+
+    glVertex3f(30,5,30);
+    glTexCoord2f(1,1);
+
+    glVertex3f(10,5,25);
+    glTexCoord2f(1,0);
+
+    glVertex3f(15,5,20);
+    glTexCoord2f(0,0);
+
+    glVertex3f(30,5,9);
+    glTexCoord2f(0, 1);
+
+
+    // glVertex3f(10,5,10);
+    //glTexCoord2f(0.75,0);
+
+    glEnd();
+
+
+    glBegin(GL_QUADS);
+
     glVertex3f(15,5,20);
     glTexCoord2f(1,1);
 
     glVertex3f(5,5,10);
     glTexCoord2f(1,0);
 
-   // glVertex3f(10,5,10);
-    //glTexCoord2f(0.75,0);
-
-
-    glVertex3f(10,5,5);
+    glVertex3f(20,5,7);
     glTexCoord2f(0,0);
 
-    glVertex3f(4,5,0);
-    glTexCoord2f(0,1);
+    glVertex3f(30,5,9);
+    glTexCoord2f(0, 1);
 
-    glVertex3f(10,5,0);
+
+    glEnd();
+
+    glBegin(GL_QUADS);
+
+
+    glVertex3f(5,5,10);
     glTexCoord2f(1,1);
 
+    glVertex3f(10,5,0);
+    glTexCoord2f(1,0);
+
+    glVertex3f(4,5,0);
+    glTexCoord2f(0,0);
+
     glVertex3f(20,5,7);
-    glTexCoord2f(0.25,0);
+    glTexCoord2f(0,1);
 
-    glVertex3f(30,5,9);
-    glTexCoord2f(0.5,0);
 
+    glEnd();
 
 
     glEnd();
@@ -247,5 +243,25 @@ void island_shape()
 
 
 
+
+}
+
+
+
+
+void road_network()
+{
+
+    light_enable();
+    glPushMatrix();
+    glTranslatef(20,0,5);
+    glBegin(GL_QUADS);
+    glVertex3f(18,6,20.5);
+    glVertex3f(18,6,19.5);
+    glVertex3f(30,6,19.5);
+    glVertex3f(30,6,20.5);
+    glEnd();
+
+    glPopMatrix();
 
 }

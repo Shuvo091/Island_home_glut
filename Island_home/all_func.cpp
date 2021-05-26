@@ -12,6 +12,50 @@
 #include "BmpLoader.h"
 
 
+
+
+void light_enable()
+{
+    GLfloat no_mat[] = { 0.0, 0.0, 0.0, 1.0 };
+    GLfloat mat_ambient[] = { 1, 1, 1, 1.0 };
+    GLfloat mat_diffuse[] = { 1, 1, 1, 1.0 };
+    GLfloat mat_specular[] = {1,0,1, 1.0 };
+    GLfloat mat_shininess[] = {60};
+
+    if(amb)
+    {
+    glMaterialfv( GL_FRONT, GL_AMBIENT, mat_ambient);
+
+    }
+    else
+    {
+        glMaterialfv( GL_FRONT, GL_AMBIENT, no_mat);
+    }
+
+    if(dif)
+    {
+    glMaterialfv( GL_FRONT, GL_DIFFUSE, mat_diffuse);
+
+    }
+    else
+    {
+        glMaterialfv( GL_FRONT, GL_DIFFUSE, no_mat);
+    }
+
+    if(spec)
+    {
+        glMaterialfv( GL_FRONT, GL_SPECULAR, mat_specular);
+    }
+    else
+    {
+        glMaterialfv( GL_FRONT, GL_SPECULAR, no_mat);
+    }
+
+
+
+    glMaterialfv( GL_FRONT, GL_SHININESS, mat_shininess);
+}
+
 void LoadTexture(const char*filename, unsigned int ID_)
 {
     ID = ID_;

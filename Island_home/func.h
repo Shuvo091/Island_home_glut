@@ -63,6 +63,7 @@ void animate();
 ///void display(void);
 void LoadTexture(const char*filename, unsigned int ID_);
 void LoadTexture_surface(const char*filename, unsigned int ID_);
+void light_enable();
 
 
 void ceilingNwall();
@@ -84,6 +85,7 @@ void drawSphere(float col_a,float col_b,float col_c);
 void sea();
 void sky();
 void island_shape();
+void road_network();
 
 
 

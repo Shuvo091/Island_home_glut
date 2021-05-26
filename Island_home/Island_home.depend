@@ -1,9 +1,36 @@
 # depslib dependency file v1.0
-<<<<<<< HEAD
-1621958599 source:c:\users\hp\desktop\glut_project\island_home\main.cpp
-=======
-1621958776 source:c:\users\hp\desktop\glut_project\island_home\main.cpp
->>>>>>> fe69479a7301194f8228734a1f53b3c253d77856
+144339312 
+
+1622014754 source:c:\users\hp\desktop\glut_project\island_home\main.cpp
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+	<math.h>
+	"func.h"
+	"BmpLoader.h"
+
+1621964126 9479a7301194f8228734a1f53b3c253d77856
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+	<math.h>
+	"func.h"
+	"BmpLoader.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+	<math.h>
+	"func.h"
+	"BmpLoader.h"
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>
@@ -242,19 +269,13 @@
 1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
 
-<<<<<<< HEAD
-1621958599 c:\users\hp\desktop\glut_project\island_home\func.h
+1621336783 D
+
+1622014442 c:\users\hp\desktop\glut_project\island_home\func.h
 
 1621330999 source:c:\users\hp\desktop\glut_project\island_home\func.c
 
-1621958599 source:c:\users\hp\desktop\glut_project\island_home\all_func.cpp
-=======
-1621958776 c:\users\hp\desktop\glut_project\island_home\func.h
-
-1621330999 source:c:\users\hp\desktop\glut_project\island_home\func.c
-
-1621958776 source:c:\users\hp\desktop\glut_project\island_home\all_func.cpp
->>>>>>> fe69479a7301194f8228734a1f53b3c253d77856
+1622014424 source:c:\users\hp\desktop\glut_project\island_home\all_func.cpp
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>
@@ -275,11 +296,7 @@
 	<math.h>
 	"func.h"
 
-<<<<<<< HEAD
-1621958599 source:c:\users\hp\desktop\glut_project\island_home\island.cpp
-=======
-1621964126 source:c:\users\hp\desktop\glut_project\island_home\island.cpp
->>>>>>> fe69479a7301194f8228734a1f53b3c253d77856
+1622016011 source:c:\users\hp\desktop\glut_project\island_home\island.cpp
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>

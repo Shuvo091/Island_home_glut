@@ -92,5 +92,10 @@ void island_shape();
 void road_network();
 void forest();
 void buildings();
+void lake();
+void house();
+
+void boundary();
+void house_skeleton();
 
 

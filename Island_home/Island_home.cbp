@@ -47,6 +47,7 @@
 		<Unit filename="Island.cpp" />
 		<Unit filename="all_func.cpp" />
 		<Unit filename="func.h" />
+		<Unit filename="house.cpp" />
 		<Unit filename="living_room_labwork_objects.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>

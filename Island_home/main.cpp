@@ -22,10 +22,16 @@ bool l_amb=true,l_dif=true, l_spec = true;
 unsigned int ID1;
 unsigned int ID2,ID, ID3;
 
-float eyeX =60,eyeY=70,eyeZ=50, lookX=15,lookY=5,lookZ=15;
+///float eyeX =60,eyeY=70,eyeZ=50, lookX=15,lookY=5,lookZ=15;
 
 ///float eyeX =60,eyeY=20,eyeZ=50, lookX=15,lookY=5,lookZ=15;
 ///float eyeX =70,eyeY=20,eyeZ=50, lookX=0,lookY=0,lookZ=0;
+
+///float eyeX =20,eyeY=20,eyeZ=40, lookX=0,lookY=0,lookZ=0;
+
+///float eyeX =20,eyeY=50,eyeZ=20, lookX=10,lookY=0,lookZ=10;
+
+float eyeX =45,eyeY=15,eyeZ=35, lookX=45,lookY=12,lookZ=20;
 
 
 
@@ -53,7 +59,11 @@ void display(void)
     road_network();
     forest();
     buildings();
+    lake();
+    house();
+
     ///drawCube(1,1,1);
+
 
     glFlush();
     glutSwapBuffers();

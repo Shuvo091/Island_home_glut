@@ -408,3 +408,45 @@ void buildings()
     glPopMatrix();
 }
 
+
+void lake()
+{
+     light_enable();
+    glPushMatrix();
+    glTranslatef(20,0,5);
+    LoadTexture_surface("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\lake2.bmp", ID);
+    glEnable(GL_TEXTURE_2D);
+
+    glBegin(GL_QUADS);
+    glVertex3f(10,5.001,15);
+    glTexCoord2f(1,1);
+    glVertex3f(7,5.001,6);
+    glTexCoord2f(1,0);
+    glVertex3f(16,5.001,6);
+    glTexCoord2f(0,0);
+    glVertex3f(16,5.001,15);
+    glTexCoord2f(0,1);
+    glEnd();
+
+
+
+    glDisable(GL_TEXTURE_2D);
+
+    glPopMatrix();
+}
+
+void house()
+{
+     light_enable();
+    glPushMatrix();
+    glTranslatef(40,6,15);
+    glScalef(.4,.4,.4);
+        boundary();
+        house_skeleton();
+
+
+    glPopMatrix();
+}
+
+
+

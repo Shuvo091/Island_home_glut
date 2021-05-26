@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 144339312 
 
-1622054663 source:c:\users\hp\desktop\glut_project\island_home\main.cpp
+1622056449 source:c:\users\hp\desktop\glut_project\island_home\main.cpp
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>
@@ -271,7 +271,7 @@
 
 1621336783 D
 
-1622054608 c:\users\hp\desktop\glut_project\island_home\func.h
+1622056449 c:\users\hp\desktop\glut_project\island_home\func.h
 
 1621330999 source:c:\users\hp\desktop\glut_project\island_home\func.c
 
@@ -296,7 +296,7 @@
 	<math.h>
 	"func.h"
 
-1622055087 source:c:\users\hp\desktop\glut_project\island_home\island.cpp
+1622056448 source:c:\users\hp\desktop\glut_project\island_home\island.cpp
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>
@@ -368,7 +368,7 @@
 	"func.h"
 	"BmpLoader.h"
 
-1622054888 source:c:\users\hp\desktop\glut_project\island_home\house.cpp
+1622056449 source:c:\users\hp\desktop\glut_project\island_home\house.cpp
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>

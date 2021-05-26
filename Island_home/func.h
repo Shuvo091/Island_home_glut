@@ -3,6 +3,10 @@
 
 
 
+#endif // FUNC_H_INCLUDED
+
+
+
 extern double Txval,Tyval,Tzval;
 extern double windowHeight, windowWidth;
 extern GLfloat alpha, theta, axis_x, axis_y;
@@ -63,6 +67,7 @@ void animate();
 ///void display(void);
 void LoadTexture(const char*filename, unsigned int ID_);
 void LoadTexture_surface(const char*filename, unsigned int ID_);
+void light_enable();
 
 
 void ceilingNwall();
@@ -84,7 +89,8 @@ void drawSphere(float col_a,float col_b,float col_c);
 void sea();
 void sky();
 void island_shape();
+void road_network();
+void forest();
+void buildings();
 
 
-
-#endif // FUNC_H_INCLUDED

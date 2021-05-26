@@ -46,33 +46,13 @@ void display(void)
 
 
 
-    ///Living room objects  here
-    /**
-    drawFloor();
-    ceilingNwall();
-    drawBox1();
-    drawBox2();
-    drawPicFrame1();
-    drawPicFrame2();
-    drawAC();
-    drawBed();
-    drawBox3();
-    window();
-    window2();
-    //fanparts();
-
-    glPushMatrix();
-    glTranslatef(-2, 4,-3);
-    drawSphere(1,1,0);
-    glPopMatrix();
-    fan();
-    glPopMatrix();
-    **/
 
     sea();
     sky();
     island_shape();
     road_network();
+    forest();
+    buildings();
     ///drawCube(1,1,1);
 
     glFlush();

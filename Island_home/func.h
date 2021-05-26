@@ -3,6 +3,10 @@
 
 
 
+#endif // FUNC_H_INCLUDED
+
+
+
 extern double Txval,Tyval,Tzval;
 extern double windowHeight, windowWidth;
 extern GLfloat alpha, theta, axis_x, axis_y;
@@ -86,7 +90,7 @@ void sea();
 void sky();
 void island_shape();
 void road_network();
+void forest();
+void buildings();
 
 
-
-#endif // FUNC_H_INCLUDED

@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 144339312 
 
-1622014754 source:c:\users\hp\desktop\glut_project\island_home\main.cpp
+1622030575 source:c:\users\hp\desktop\glut_project\island_home\main.cpp
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>
@@ -271,7 +271,7 @@
 
 1621336783 D
 
-1622014442 c:\users\hp\desktop\glut_project\island_home\func.h
+1622029681 c:\users\hp\desktop\glut_project\island_home\func.h
 
 1621330999 source:c:\users\hp\desktop\glut_project\island_home\func.c
 
@@ -296,7 +296,7 @@
 	<math.h>
 	"func.h"
 
-1622016011 source:c:\users\hp\desktop\glut_project\island_home\island.cpp
+1622030432 source:c:\users\hp\desktop\glut_project\island_home\island.cpp
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>

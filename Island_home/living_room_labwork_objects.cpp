@@ -17,13 +17,13 @@ void ceilingNwall()
     glPushMatrix();
     glTranslatef(-5,0,-5);
     glScalef(0.25,4,7);
-    drawCube(0.7,0.7,0.7);
+    drawCube(0.2,0.2,0.2);
     glPopMatrix();
 
     glPushMatrix();
     glTranslatef(-5,0,-5);
     glScalef(7,4,0.25);
-    drawCube(0.5,0.5,0.5);
+    drawCube(0.2,0.2,0.2);
     glPopMatrix();
 
     glPushMatrix();
@@ -32,12 +32,32 @@ void ceilingNwall()
     drawCube(0.7,0.7,0.7);
     glPopMatrix();
 
+    ///------------------frontwall
+
     glPushMatrix();
     glTranslatef(-5,0,9);
-    glScalef(7,4,0.25);
+    glScalef(1,4,0.25);
     drawCube(0.5,0.5,0.5);
     glPopMatrix();
 
+
+    glPushMatrix();
+    glTranslatef(3,0,9);
+    glScalef(1,4,0.25);
+    drawCube(0.5,0.5,0.5);
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-5,6,9);
+    glScalef(7,1,0.25);
+    drawCube(0.5,0.5,0.5);
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(-5,0,9);
+    glScalef(5,1,0.25);
+    drawCube(0.5,0.5,0.5);
+    glPopMatrix();
     ///ceiling
     glPushMatrix();
     glTranslatef(-5,7.5,-5);
@@ -238,35 +258,35 @@ void drawBox2()
 void fan_blades()
 {
     glPushMatrix();
-   glRotatef(theta,0,1,0);
+    glRotatef(theta,0,1,0);
     glTranslatef(5,0,-3);
     glScalef(15,0.4,3);
     drawCube(0.1,0.2,0.2);
-   glPopMatrix();
+    glPopMatrix();
 
-   glPushMatrix();
-   glRotatef(theta,0,1,0);
+    glPushMatrix();
+    glRotatef(theta,0,1,0);
     glTranslatef(-5,0,-3);
     glScalef(15,0.4,3);
     glRotatef(90,0,0,1);
     drawCube(0.1,0.2,0.2);
-   glPopMatrix();
+    glPopMatrix();
 
-   glPushMatrix();
-   glRotatef(theta,0,1,0);
+    glPushMatrix();
+    glRotatef(theta,0,1,0);
     glTranslatef(-3,0,5);
     glScalef(3,0.4,15);
     ///glRotatef(90,0,0,1);
     drawCube(0.1,0.2,0.2);
-   glPopMatrix();
+    glPopMatrix();
 
-   glPushMatrix();
-   glRotatef(theta,0,1,0);
-   glTranslatef(-3,0,-5);
+    glPushMatrix();
+    glRotatef(theta,0,1,0);
+    glTranslatef(-3,0,-5);
     glScalef(3,0.4,15);
     glRotatef(90,0,1,0);
     drawCube(0.1,0.2,0.2);
-   glPopMatrix();
+    glPopMatrix();
 }
 
 void fan()
@@ -280,28 +300,28 @@ void fan()
     glTranslatef(0,4,0);
     glScalef(0.1,0.1,0.1);
 
-   glPushMatrix();
-   glRotated(180,1,0,0);
-   glPushMatrix();
-   glRotatef(90,1,0,0);
-   draw_cylinder(1,15,1,1,1);
-   glPopMatrix();
+    glPushMatrix();
+    glRotated(180,1,0,0);
+    glPushMatrix();
+    glRotatef(90,1,0,0);
+    draw_cylinder(1,15,1,1,1);
+    glPopMatrix();
 
-   glPushMatrix();
-   glRotatef(90,1,0,0);
-   draw_cylinder(5,3,1,1,1);
-   glPopMatrix();
+    glPushMatrix();
+    glRotatef(90,1,0,0);
+    draw_cylinder(5,3,1,1,1);
+    glPopMatrix();
 
-   glPushMatrix();
-   glRotated(theta,0,1,0);
-   fan_blades();
-   glPopMatrix();
+    glPushMatrix();
+    glRotated(theta,0,1,0);
+    fan_blades();
+    glPopMatrix();
 
-   glPopMatrix();
+    glPopMatrix();
 
-   glPopMatrix();
+    glPopMatrix();
 
-   glPopMatrix();
+    glPopMatrix();
 }
 
 
@@ -614,14 +634,14 @@ void drawSphere(float col_a,float col_b,float col_c)
 {
 
     GLfloat no_mat[] = { 0.0, 0.0, 0.0, 1.0 };
-    GLfloat mat_ambient[] = { col_a, col_b , col_c, 1.0 };
+    GLfloat mat_ambient[] = { col_a, col_b, col_c, 1.0 };
     GLfloat mat_diffuse[] = { 1, 1, 0, 1.0 };
     GLfloat mat_specular[] = { 1.0, 1.0, 1.0, 1.0 };
     GLfloat mat_shininess[] = {70};
 
     if(amb)
     {
-    glMaterialfv( GL_FRONT, GL_AMBIENT, mat_ambient);
+        glMaterialfv( GL_FRONT, GL_AMBIENT, mat_ambient);
 
     }
     else
@@ -631,7 +651,7 @@ void drawSphere(float col_a,float col_b,float col_c)
 
     if(dif)
     {
-    glMaterialfv( GL_FRONT, GL_DIFFUSE, mat_diffuse);
+        glMaterialfv( GL_FRONT, GL_DIFFUSE, mat_diffuse);
 
     }
     else
@@ -652,6 +672,32 @@ void drawSphere(float col_a,float col_b,float col_c)
 
     glMaterialfv( GL_FRONT, GL_SHININESS, mat_shininess);
     glutSolidSphere(0.5, 20, 16);
+}
+
+void living_room()
+{
+    glPushMatrix();
+    ///--------------------------------------
+    glTranslatef(3.9,0,3.9);
+    glScalef(0.62,1,0.62);
+
+    drawFloor();
+    ceilingNwall();
+    drawBox1();
+    drawBox2();
+    drawPicFrame1();
+    drawPicFrame2();
+    drawAC();
+    drawBed();
+    drawBox3();
+    window();
+    window2();
+    fan();
+
+    ///------------------------------
+
+    glPopMatrix();
+
 }
 
 

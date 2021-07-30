@@ -15,7 +15,22 @@ extern bool light1, light2, light3;
 extern bool amb, dif, spec;
 extern bool l_amb,l_dif, l_spec;
 extern float eyeX,eyeY,eyeZ, lookX,lookY,lookZ;
-extern unsigned int ID, ID1, ID2, ID3;
+extern unsigned int ID1[100];
+extern unsigned int ID;
+extern GLuint *textures;
+extern float car1_X,car2_X,car3_X, car1_Z,car2_Y,car3_Y;
+extern bool move_forward1, move_forward2, move_forward3;
+extern int water_texture;
+extern bool day;
+extern int sky_texture, sky_texture2;
+extern float sea_c;
+extern int sun_pos_x, sun_pos_z;
+extern bool ship_view;
+
+
+extern float boat_X, boat_Z;
+extern bool boat_forward, boat_sideways;
+extern int ship_view_up, ship_view_down, ship_view_right, ship_view_left;
 
 
 
@@ -64,9 +79,9 @@ void draw_cylinder(GLfloat radius, GLfloat height, GLubyte col_a, GLubyte col_b,
 void light();
 void myKeyboardFunc( unsigned char key, int x, int y );
 void animate();
+
 ///void display(void);
-void LoadTexture(const char*filename, unsigned int ID_);
-void LoadTexture_surface(const char*filename, unsigned int ID_);
+void LoadTexture(const char*filename, GLuint ID_);
 void light_enable();
 
 
@@ -84,6 +99,9 @@ void drawPicFrame2();
 void drawPicFrame1();
 void drawAC();
 void drawSphere(float col_a,float col_b,float col_c);
+void living_room();
+void building_network();
+void ship();
 
 
 void sea();
@@ -94,6 +112,13 @@ void forest();
 void buildings();
 void lake();
 void house();
+void skyy();
+void boat();
+void car();
+void simulate_cars();
+void simulate_boats();
+void custom_building();
+void sun();
 
 void boundary();
 void house_skeleton();

@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 144339312 
 
-1622056449 source:c:\users\hp\desktop\glut_project\island_home\main.cpp
+1623622794 source:c:\users\hp\desktop\glut_project\island_home\main.cpp
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>
@@ -11,6 +11,12 @@
 	<math.h>
 	"func.h"
 	"BmpLoader.h"
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<vector>
+	<iostream>
 
 1621964126 9479a7301194f8228734a1f53b3c253d77856
 	<GL/gl.h>
@@ -271,11 +277,33 @@
 
 1621336783 D
 
-1622056449 c:\users\hp\desktop\glut_project\island_home\func.h
+1623615808 c:\users\hp\desktop\glut_project\island_home\func.h
 
 1621330999 source:c:\users\hp\desktop\glut_project\island_home\func.c
 
-1622031354 source:c:\users\hp\desktop\glut_project\island_home\all_func.cpp
+1623617459 source:c:\users\hp\desktop\glut_project\island_home\all_func.cpp
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+	<math.h>
+	<iostream>
+	"func.h"
+	"BmpLoader.h"
+
+1623614379 source:c:\users\hp\desktop\glut_project\island_home\living_room_labwork_objects.cpp
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+	<math.h>
+	"func.h"
+
+1623616823 source:c:\users\hp\desktop\glut_project\island_home\island.cpp
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>
@@ -286,31 +314,10 @@
 	"func.h"
 	"BmpLoader.h"
 
-1622031354 source:c:\users\hp\desktop\glut_project\island_home\living_room_labwork_objects.cpp
-	<GL/gl.h>
-	<GL/glu.h>
-	<GL/glut.h>
-	<stdlib.h>
-	<stdio.h>
-	<windows.h>
-	<math.h>
-	"func.h"
-
-1622056448 source:c:\users\hp\desktop\glut_project\island_home\island.cpp
-	<GL/gl.h>
-	<GL/glu.h>
-	<GL/glut.h>
-	<stdlib.h>
-	<stdio.h>
-	<windows.h>
-	<math.h>
-	"func.h"
-	"BmpLoader.h"
-
-1622031354 c:\users\hp\desktop\glut_project\island_home\bmploader.h
+1622009892 c:\users\hp\desktop\glut_project\island_home\bmploader.h
 	<windows.h>
 
-1622031354 source:c:\users\hp\desktop\glut_project\island_home\bmploader.cpp
+1622009892 source:c:\users\hp\desktop\glut_project\island_home\bmploader.cpp
 	"BmpLoader.h"
 	<stdio.h>
 	<iostream>
@@ -368,7 +375,7 @@
 	"func.h"
 	"BmpLoader.h"
 
-1622056449 source:c:\users\hp\desktop\glut_project\island_home\house.cpp
+1623614379 source:c:\users\hp\desktop\glut_project\island_home\house.cpp
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>
@@ -378,4 +385,75 @@
 	<math.h>
 	"func.h"
 	"BmpLoader.h"
+
+1623617459 source:c:\users\hp\desktop\island_home_glut-main\island_home\all_func.cpp
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+	<math.h>
+	<iostream>
+	"func.h"
+	"BmpLoader.h"
+
+1623615808 c:\users\hp\desktop\island_home_glut-main\island_home\func.h
+
+1622009892 c:\users\hp\desktop\island_home_glut-main\island_home\bmploader.h
+	<windows.h>
+
+1622009892 source:c:\users\hp\desktop\island_home_glut-main\island_home\bmploader.cpp
+	"BmpLoader.h"
+	<stdio.h>
+	<iostream>
+
+1623614379 source:c:\users\hp\desktop\island_home_glut-main\island_home\house.cpp
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+	<math.h>
+	"func.h"
+	"BmpLoader.h"
+
+1623616823 source:c:\users\hp\desktop\island_home_glut-main\island_home\island.cpp
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+	<math.h>
+	"func.h"
+	"BmpLoader.h"
+
+1623614379 source:c:\users\hp\desktop\island_home_glut-main\island_home\living_room_labwork_objects.cpp
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+	<math.h>
+	"func.h"
+
+1623622794 source:c:\users\hp\desktop\island_home_glut-main\island_home\main.cpp
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+	<math.h>
+	"func.h"
+	"BmpLoader.h"
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<vector>
+	<iostream>
 

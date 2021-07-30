@@ -14,8 +14,9 @@
 void boundary()
 {
     glPushMatrix();
-    LoadTexture("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\pavement.bmp", ID1);
+
     glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, textures[8]);
 
     glPushMatrix();
     glScalef(10,0.1,12);
@@ -27,8 +28,9 @@ void boundary()
 
 
     glPushMatrix();
-    LoadTexture("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\wall2.bmp", ID1);
+
     glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, textures[9]);
 
     glPushMatrix();
     glScalef(0.2,2,12);
@@ -54,53 +56,35 @@ void boundary()
 void house_skeleton()
 {
 
-    light_enable();
 
     glPushMatrix();
-
     glScalef(1.3,1.3,1.3);
     glTranslatef(-1,0,-3);
 
 
     glPushMatrix();
-    LoadTexture("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\wall3.bmp", ID1);
+
     glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, textures[10]);
+
     glPushMatrix();
     glTranslatef(5,0,18);
     glScalef(1,2,1);
     drawCube(1,1,1);
-    glDisable(GL_TEXTURE_2D);
-    glPopMatrix();
     glPopMatrix();
 
     glPushMatrix();
-    LoadTexture("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\wall3.bmp", ID1);
-    glEnable(GL_TEXTURE_2D);
     glTranslatef(5,0,17);
     glScalef(2,2,1);
     drawCube(1,1,1);
-    glDisable(GL_TEXTURE_2D);
     glPopMatrix();
 
     glPushMatrix();
-    LoadTexture("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\wall3.bmp", ID1);
-    glEnable(GL_TEXTURE_2D);
-
-    glPushMatrix();
-    LoadTexture("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\wall3.bmp", ID1);
-    glEnable(GL_TEXTURE_2D);
     glTranslatef(5,0,14);
     glScalef(3,2,2);
     drawCube(1,1,1);
-    glDisable(GL_TEXTURE_2D);
     glPopMatrix();
 
-    glDisable(GL_TEXTURE_2D);
-    glPopMatrix();
-
-    glPushMatrix();
-    LoadTexture("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\wall3.bmp", ID1);
-    glEnable(GL_TEXTURE_2D);
     glPushMatrix();
     glTranslatef(5,0,13);
     glScalef(4,2,1);
@@ -115,8 +99,9 @@ void house_skeleton()
     ///---- eita 1 tolar saad
 
     glPushMatrix();
-    LoadTexture("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\roof1.bmp", ID1);
+
     glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, textures[11]);
 
     glPushMatrix();
     glTranslatef(4.5,4,12.5);
@@ -124,26 +109,11 @@ void house_skeleton()
     drawCube(1,1,1);
     glPopMatrix();
 
-    glDisable(GL_TEXTURE_2D);
-    glPopMatrix();
-
-
-    glPushMatrix();
-    LoadTexture("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\roof1.bmp", ID1);
-    glEnable(GL_TEXTURE_2D);
-
     glPushMatrix();
     glTranslatef(4.5,4,14.5);
     glScalef(2.5,0.2,3);
     drawCube(1,1,1);
     glPopMatrix();
-
-    glDisable(GL_TEXTURE_2D);
-    glPopMatrix();
-
-    glPushMatrix();
-    LoadTexture("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\roof1.bmp", ID1);
-    glEnable(GL_TEXTURE_2D);
 
     glPushMatrix();
     glTranslatef(7,3.8,13.5);
@@ -156,8 +126,9 @@ void house_skeleton()
 
 
     glPushMatrix();
-    LoadTexture("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\wall2.bmp", ID1);
+
     glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, textures[12]);
 
     glPushMatrix();
     glTranslatef(5,4,18.5);
@@ -187,8 +158,9 @@ void house_skeleton()
     ///----------------------2nd tola shesh railing shuru
 
     glPushMatrix();
-    LoadTexture("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\wall3.bmp", ID1);
+
     glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, textures[13]);
 
     glPushMatrix();
     glTranslatef(5,8,13);
@@ -243,8 +215,9 @@ void house_skeleton()
     glPopMatrix();
 
     glPushMatrix();
-    LoadTexture("C:\\Users\\HP\\Desktop\\GLUT_project\\Island_home\\wall6.bmp", ID1);
+
     glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, textures[14]);
 
     glPushMatrix();
     glTranslatef(6,8,14);
@@ -257,8 +230,10 @@ void house_skeleton()
     glPopMatrix();
 
 
-        glPopMatrix();
+    glPopMatrix();
 
 
 
 }
+
+
